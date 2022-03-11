@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:ital,wght@0,400;0,700;1,200&family=Poppins:wght@400;700&family=Space+Mono:ital,wght@0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.header__text {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.img__main {
+  width: 80%;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor__main {
+  width: 50%;
+  min-height: 447px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+
+  color: #333333;
+}
+
+.subtitle {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+
+  color: #4f4f4f;
+}
+
+.btn {
+  width: 216px;
+  height: 68px;
+  background: #333333;
+  color: white;
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.footer {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #bdbdbd;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 660px) {
+    main{
+        flex-direction: column;
+    }
+    .contenedor__main{
+        width:90%
+    }
+}
